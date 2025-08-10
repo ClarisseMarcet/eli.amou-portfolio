@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clarisse AMOU | Développeuse Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/service.css">
+    <link rel="stylesheet" href="CSS/contact.css.css">
+    <!--<link rel="stylesheet" href="CSS/competences.css"> 
+    <link rel="stylesheet" href="CSS/apropos.css">
+     <link rel="stylesheet" href="CSS/navbar.css"> -->
+    
+    <link rel="icon" href="images/favicon.png">
+</head>
+<body>
+
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span>C</span>larisse
+            </a>
+            
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#apropos">À Propos</a></li>
+                    <li><a href="#competences">Compétences</a></li>
+                    <li><a href="#projets">Projets</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+                <div class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+
+            <button id="theme-toggle" class="theme-toggle" aria-label="Changer le thème">🌙</button>
+        </div>
+    </header>
+
+
+
+    <!-- Header inclus dynamiquement -->
+    <div id="header-placeholder"></div>
+
+    <!-- Section Accueil -->
+    <section id="accueil" class="accueil">
+        <div class="container">
+            <div class="accueil-content">
+                <div class="text">
+                    <h1>Bonjour, je suis <span>Clarisse AMOU</span></h1>
+                    <h2>Développeuse Web & Mobile</h2>
+                    <p>Étudiante passionnée en développement web et mobile, je recherche un stage pour mettre en pratique mes compétences et apprendre davantage.</p>
+                    <div class="btn-group">
+                        <a href="#contact" class="btn">Me contacter</a>
+                        <a href="CV_Clarisse_AMOU.pdf" download class="btn secondary">Télécharger CV</a>
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="image">
+                    <div class="img-box">
+                        <img src="images/clarisse..jpg" alt="Clarisse AMOU">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À Propos -->
+    <section id="apropos" class="apropos">
+        <div class="container">
+            <h2 class="section-title">À Propos de <span>Moi</span></h2>
+            <div class="content">
+                <div class="image">
+                    <img src="images/about.jpg" alt="À propos">
+                </div>
+                <div class="text">
+                    <h3>Développeuse Web & Mobile</h3>
+                    <p>Étudiante en 2ème année de développement web et mobile, je combine une solide formation en économie internationale avec une passion pour la technologie. Mon objectif est de créer des solutions numériques innovantes tout en continuant à apprendre et évoluer dans ce domaine dynamique.</p>
+                    
+                    <div class="info">
+                        <div class="info-item">
+                            <i class="fas fa-user-graduate"></i>
+                            <div>
+                                <h4>Formation</h4>
+                                <p>Développement Web & Mobile</p>
+                                <p>Licence en Économie Internationale</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-laptop-code"></i>
+                            <div>
+                                <h4>Expérience</h4>
+                                <p>Projets académiques et personnels</p>
+                                <p>Hackathons et challenges</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#competences" class="btn">Voir mes compétences</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="competences" class="competences">
+        <div class="container">
+            <h2 class="section-title">Mes <span>Compétences</span></h2>
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Tout</button>
+                <button class="filter-btn" data-filter="web">Dev</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="web">Mobile</button>
+                <button class="filter-btn" data-filter="mobile">Data</button>
+                <button class="filter-btn" data-filter="autres">Outils</button>
+            </div>
+            <div class="skills-container">
+                <!-- Compétences Web -->
+                <div class="skill-card" data-category="web">
+                    <div class="icon"><i class="fab fa-html5"></i></div>
+                    <h3>HTML5</h3>
+                    <p>Maîtrise des balises sémantiques et accessibilité</p>
+                    <div class="progress"><div class="progress-bar" style="width: 90%"></div></div>
+                </div>
+                <div class="skill-card" data-category="web">
+                    <div class="icon"><i class="fab fa-css3-alt"></i></div>
+                    <h3>CSS3</h3>
+                    <p>Animations, Flexbox, Grid et design responsive</p>
+                    <div class="progress"><div class="progress-bar" style="width: 85%"></div></div>
+                </div>
+                <div class="skill-card" data-category="web">
+                    <div class="icon"><i class="fab fa-js"></i></div>
+                    <h3>JavaScript</h3>
+                    <p>Manipulation du DOM et bases d'ES6</p>
+                    <div class="progress"><div class="progress-bar" style="width: 80%"></div></div>
+                </div>
+                <div class="skill-card" data-category="web">
+                    <div class="icon"><i class="fab fa-php"></i></div>
+                    <h3>PHP</h3>
+                    <p>Développement back-end et interaction avec bases de données</p>
+                    <div class="progress"><div class="progress-bar" style="width: 75%"></div></div>
+                </div>
+                <!-- Compétences Mobile -->
+                <div class="skill-card" data-category="mobile">
+                    <div class="icon"><i class="fab fa-react"></i></div>
+                    <h3>React Native</h3>
+                    <p>Développement d'applications cross-platform</p>
+                    <div class="progress"><div class="progress-bar" style="width: 70%"></div></div>
+                </div>
+                <!-- Autres Compétences -->
+                <div class="skill-card" data-category="autres">
+                    <div class="icon"><i class="fas fa-database"></i></div>
+                    <h3>MySQL</h3>
+                    <p>Conception et gestion de bases de données</p>
+                    <div class="progress"><div class="progress-bar" style="width: 80%"></div></div>
+                </div>
+                <div class="skill-card" data-category="autres">
+                    <div class="icon"><i class="fab fa-git-alt"></i></div>
+                    <h3>Git</h3>
+                    <p>Gestion de versions et collaboration</p>
+                    <div class="progress"><div class="progress-bar" style="width: 75%"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets" class="projets">
+        <div class="container">
+            <h2 class="section-title">Mes <span>Projets</span></h2>
+            <div class="projets-grid">
+                <div class="projet-card">
+                    <img src="images/projets/gestion-pros.jpg" alt="Gestion des professionnels">
+                    <div class="projet-content">
+                        <h3>Site de gestion</h3>
+                        <p>Plateforme web complète avec tableau de bord administrateur</p>
+                        <div class="projet-badge">Académique</div>
+                    </div>
+                </div>
+                <div class="projet-card">
+                    <img src="images/projets/ecommerce.jpg" alt="Site e-commerce">
+                    <div class="projet-content">
+                        <h3>Site E-commerce</h3>
+                        <p>Plateforme de vente en ligne avec système de paiement</p>
+                        <div class="projet-badge">Académique</div>
+                    </div>
+                </div>
+                <div class="projet-card">
+                    <img src="images/projets/portfolio.jpg" alt="Portfolio">
+                    <div class="projet-content">
+                        <h3>Portfolio</h3>
+                        <p>Conception et développement de portfolio</p>
+                        <div class="projet-badge personnel">Personnel</div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="projets.html" class="btn">Voir plus de projets</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Services -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Mes <span>Services</span></h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Développement Web</h3>
+                    <div class="service-stats"><span><i class="fas fa-spinner"></i> En cours: 1 Projet</span></div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Applications Mobile</h3>
+                    <div class="service-stats"><span><i class="fas fa-spinner"></i> En cours: 1 Projet</span></div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Analyse de Données</h3>
+                    <div class="service-stats">
+                        <span><i class="fas fa-user-tie"></i> Clients: 1</span>
+                        <span><i class="fas fa-star"></i> Niveau: Débutante</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Me <span>Contacter</span></h2>
+            <div class="content">
+                <div class="contact-info">
+                    <h3>Discutons de votre projet</h3>
+                    <p>Je suis disponible pour des opportunités de stage ou des projets freelance. N'hésitez pas à me contacter !</p>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>eli.amou@edu.ece.fr</p>
+                            <p>eliclarissea@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <p>+33 XX XX XX XX XX</p>
+                        </div>
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group"><input type="text" placeholder="Votre nom" required></div>
+                    <div class="form-group"><input type="email" placeholder="Votre email" required></div>
+                    <div class="form-group"><input type="text" placeholder="Sujet"></div>
+                    <div class="form-group"><textarea placeholder="Votre message" required></textarea></div>
+                    <button type="submit" class="btn">Envoyer le message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer inclus dynamiquement -->
+    <div id="footer-placeholder"></div>
+
+    <script src="JS/main.js"></script>
+</body>
+</html>

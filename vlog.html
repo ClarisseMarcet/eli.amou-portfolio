@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vog | Blog de Clarisse</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/vog.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <!-- Header (identique à votre page principale) -->
+    <header id="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span>C</span>larisse
+            </a>
+            
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="index.html#apropos">À Propos</a></li>
+                    <li><a href="index.html#projets">Projets</a></li>
+                    <li><a href="vog.html" class="active">Vog</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+                <div class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+
+            <button id="theme-toggle" class="theme-toggle">🌙</button>
+        </div>
+    </header>
+
+    <!-- Contenu principal du blog -->
+    <main id="vog-main">
+        <!-- Bannière du blog -->
+        <section class="vog-banner">
+            <div class="container">
+                <h1>Vog</h1>
+                <p>Mes réflexions sur le design et le développement</p>
+            </div>
+        </section>
+
+        <!-- Section des articles -->
+        <section class="vog-articles">
+            <div class="container">
+                <div class="articles-grid">
+                    <!-- Article 1 -->
+                    <article class="vog-article">
+                        <a href="article-1.html" class="article-link">
+                            <div class="article-image">
+                                <img src="images/blog1.jpg" alt="UI/UX Moderne">
+                                <span class="article-category">Design</span>
+                            </div>
+                            <div class="article-content">
+                                <h2>Les tendances UI/UX en 2023</h2>
+                                <p class="article-excerpt">Découvrez les nouvelles approches en design d'interface...</p>
+                                <div class="article-meta">
+                                    <span><i class="far fa-clock"></i> 5 min read</span>
+                                    <span><i class="far fa-calendar"></i> 12 Juin 2023</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <!-- Article 2 -->
+                    <article class="vog-article">
+                        <a href="article-2.html" class="article-link">
+                            <div class="article-image">
+                                <img src="images/blog2.jpg" alt="React Avancé">
+                                <span class="article-category">Développement</span>
+                            </div>
+                            <div class="article-content">
+                                <h2>React 18 : Ce qui a changé</h2>
+                                <p class="article-excerpt">Les nouveautés de React 18 expliquées simplement...</p>
+                                <div class="article-meta">
+                                    <span><i class="far fa-clock"></i> 8 min read</span>
+                                    <span><i class="far fa-calendar"></i> 28 Mai 2023</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <!-- Plus d'articles... -->
+                </div>
+
+                <!-- Pagination -->
+                <div class="vog-pagination">
+                    <a href="#" class="btn btn-outline">← Articles récents</a>
+                    <a href="#" class="btn btn-primary">Articles anciens →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="vog-newsletter">
+            <div class="container">
+                <h2>Restez connecté</h2>
+                <p>Recevez mes nouveaux articles directement par email</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Votre email" required>
+                    <button type="submit" class="btn btn-primary">S'abonner</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="vog-footer">
+        <div class="container">
+            <p>&copy; 2023 Clarisse. Tous droits réservés.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JS/vog.js"></script>
+</body>
+</html>

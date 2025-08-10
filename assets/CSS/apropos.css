@@ -1,0 +1,134 @@
+/* ===== SECTION À PROPOS ===== */
+.apropos {
+    padding: 120px 0;
+    background-color: var(--white);
+    position: relative;
+}
+
+.apropos::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, rgba(248, 249, 255, 0), var(--light-color));
+    z-index: 1;
+}
+
+.apropos .container {
+    position: relative;
+    z-index: 2;
+}
+
+.apropos .section-title {
+    margin-bottom: 60px;
+}
+
+.apropos-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.apropos-image {
+    flex: 1;
+    min-width: 300px;
+    position: relative;
+}
+
+.apropos-image::before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid var(--primary-color);
+    border-radius: 20px;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.apropos-image img {
+    border-radius: 20px;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.apropos-image:hover img {
+    transform: translateY(-10px);
+}
+
+.apropos-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.apropos-text h3 {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    position: relative;
+    display: inline-block;
+}
+
+.apropos-text h3::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 12px;
+    background-color: rgba(76, 201, 240, 0.3);
+    z-index: -1;
+    border-radius: 3px;
+}
+
+.apropos-text p {
+    margin-bottom: 35px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.info-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.info-icon {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    min-width: 40px;
+    text-align: center;
+}
+
+.info-content h4 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.info-content p {
+    margin-bottom: 0;
+    font-size: 1rem;
+    color: var(--text-light);
+}
+
+/* Responsive À Propos */
+@media (max-width: 992px) {
+    .apropos-content {
+        flex-direction: column;
+    }
+    
+    .apropos-image {
+        margin-bottom: 50px;
+    }
+}
